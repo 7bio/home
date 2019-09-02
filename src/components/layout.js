@@ -2,9 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import "./layout.css"
 import "./../styles/global.css"
-import PrimaryLogo from '../../static/images/primary_logo_black.png';
-
-
+import PrimaryLogo from '../../static/images/logo_no_background.png';
 
 const ListLink = props => (
   <li>
@@ -20,7 +18,7 @@ export default ({ children }) => (
           <img src={PrimaryLogo}></img>
         </div>
         <div className="nav-main">
-          <ul>
+          <ul className="nav-links">
             <ListLink to="/">Home</ListLink>
             <ListLink to="/about/">About Us</ListLink>
             <ListLink to="/team/">Our Team</ListLink>

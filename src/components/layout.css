@@ -1,21 +1,36 @@
-header {
+.container {
+  display: flex;
+  flex-direction: row;
   background-color: rgb(20, 22, 20);
   color: white;
   border: 1px solid pink;
   font-family: 'Lato', sans-serif;
-}
-
-.container {
-  display: flex;
+  justify-content: space-between;
 }
 
 .primary-logo {
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 168px;
+  max-height: 52px;
+  border: 1px solid green;
 }
 
 .nav-main {
+  font-family: 'Lato', sans-serif;
   display: flex;
-  flex: end;
-  color: #16AA4B
+  flex-direction: row;
+  color: #16AA4B;
+  border: 1px solid blue;
+  width: auto;
+}
+
+.nav-main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.nav-links li a{
+  color: #16AA4B;
+  border: 1px solid pink;
 }
