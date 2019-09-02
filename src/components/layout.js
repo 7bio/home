@@ -1,22 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
+import "./layout.css"
+import "./../styles/global.css"
+import PrimaryLogo from '../../static/images/primary_logo_black.png';
+
+
+
 const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+  <li>
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
 
 export default ({ children }) => (
-  <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
-    <header style={{ marginBottom: `1.5rem` }}>
-      <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h3 style={{ display: `inline` }}> 7 Bio Sciences</h3>
-      </Link>
-      <ul style={{ listStyle: `none`, float: `right` }}>
-        <ListLink to="/">Home</ListLink>
-        <ListLink to="/about/">About</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
-      </ul>
+  <div >
+    <header>
+      <div className="container">
+        <div className="primary-logo">
+          <img src={PrimaryLogo}></img>
+        </div>
+        <div className="nav-main">
+          <ul>
+            <ListLink to="/">Home</ListLink>
+            <ListLink to="/about/">About Us</ListLink>
+            <ListLink to="/team/">Our Team</ListLink>
+            <ListLink to="/news/">News</ListLink>
+            <ListLink to="/contact/">Contact</ListLink>
+          </ul>
+        </div>
+      </div>
     </header>
     {children}
   </div>

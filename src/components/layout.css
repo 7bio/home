@@ -1,0 +1,21 @@
+header {
+  background-color: rgb(20, 22, 20);
+  color: white;
+  border: 1px solid pink;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.primary-logo {
+  max-width: 300px;
+  max-height: 400px;
+}
+
+.nav-main {
+  display: flex;
+  flex: end;
+  color: #16AA4B
+}
