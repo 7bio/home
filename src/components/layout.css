@@ -1,36 +1,62 @@
-.container {
+.sevenbio__header {
   display: flex;
   flex-direction: row;
   background-color: rgb(20, 22, 20);
-  color: white;
   border: 1px solid pink;
-  font-family: 'Lato', sans-serif;
   justify-content: space-between;
 }
 
-.primary-logo {
-  max-width: 168px;
-  max-height: 52px;
+.sevenbio__logo--primary {
+  display: inline-block;
+  padding-top: 0.6rem;
+  padding-bottom: 0.75rem; 
   border: 1px solid green;
 }
 
-.nav-main {
-  font-family: 'Lato', sans-serif;
-  display: flex;
-  flex-direction: row;
+.sevenbio__logo--primary img {
+    width: 120px; 
+}
+
+@media (min-width: 768px) {
+  .sevenbio__header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .sevenbio__logo--primary img {
+    width: 168px; 
+  } 
+}
+
+.header-logo__text {
+  position: absolute;
+  left: -99999px; 
+}
+
+img {
+  margin-bottom: 0;
+}
+
+.sevenbio__navbar-ul {
   color: #16AA4B;
   border: 1px solid blue;
-  width: auto;
-}
-
-.nav-main ul {
+  
+  margin-left: 24px;
+  margin-bottom: 0;
   list-style: none;
+
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.nav-links li a{
+.sevenbio__navbar-li {
+  margin-top: 0;
+  margin-bottom: 0;
   color: #16AA4B;
   border: 1px solid pink;
+  width: 100%;
+  text-align: center;
 }
