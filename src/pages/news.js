@@ -3,6 +3,10 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <h1>NEWS</h1>
+    <div className="page-layout">
+      <h1 className="page-layout__header">News</h1>
+      <p className="page-layout__text">Hello</p>
+
+    </div>
   </Layout>
 )

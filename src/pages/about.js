@@ -5,7 +5,9 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout style={{ color: `teal` }}>
-    <h1>ABOUT</h1>
-    <p>Such wow. Very React.</p>
+    <div className="page-layout">
+      <h1 className="page-layout__header">ABOUT</h1>
+      <p className="page-layout__text">Such wow. Very React.</p>
+    </div>
   </Layout >
 )

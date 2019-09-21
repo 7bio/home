@@ -4,26 +4,38 @@ import "./layout.css"
 import "./../styles/global.css"
 import PrimaryLogo from '../../static/images/logo_no_background.png';
 
-const ListLink = props => (
-  <li className="sevenbio__navbar-li">
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
-
 export default ({ children }) => (
-  <div >
-    <header className="sevenbio__header">
-      <div className="sevenbio__logo--primary">
-        <img src={PrimaryLogo}></img>
+  <div className="landing-page">
+    <div className="landing-page--header">
+      <div className="header__logo__container">
+        <img src={PrimaryLogo} className="header__img"></img>
       </div>
-      <ul className="sevenbio__navbar-ul">
-        <ListLink to="/">Home</ListLink>
-        <ListLink to="/about/">About Us</ListLink>
-        <ListLink to="/team/">Our Team</ListLink>
-        <ListLink to="/news/">News</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
-      </ul>
-    </header>
-    {children}
+      <div className="header__links">
+        <div className="header__links__single">
+          <Link to="/" className="header__links__text" activeClassName="header__links__text--active">Home</Link>
+          <div id="circle"></div>
+        </div>
+        <div className="header__links__single">
+          <Link to="/about/" className="header__links__text" activeClassName="header__links__text--active">About Us</Link>
+          <div id="circle"></div>
+        </div>
+        <div className="header__links__single">
+          <Link to="/team/" className="header__links__text" activeClassName="header__links__text--active">Our Team</Link>
+          <div id="circle"></div>
+        </div>
+        <div className="header__links__single">
+          <Link to="/news/" className="header__links__text" activeClassName="header__links__text--active">News</Link>
+          <div id="circle"></div>
+        </div>
+        <div className="header__links__single">
+          <Link to="/contact/" className="header__links__text" activeClassName="header__links__text--active">Contact</Link>
+          <div id="circle"></div>
+        </div>
+      </div>
+    </div>
+    <div className="landing-page--body">
+      {children}
+    </div>
+
   </div>
 )
