@@ -140,17 +140,14 @@ body {
   text-shadow: #16AA4B 0 0 15px;
 }
 
-
-
 .header__links__text--active {
   color: #16AA4B;
   text-shadow: #16AA4B 0 0 15px;
 }
 
-
 .landing-page--body {
   display: flex;
-  height: 88%;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -179,18 +176,35 @@ body {
 
 .page-layout__image {
   grid-area: 'image';
-  border: 1px solid pink;
 }
 
 .page-layout-team {
   width: 100%;
-  height: 100%;
-  box-sizing: border-box;
   padding: 20px;
-  background-color: #3A3B37;
-  border: 5px solid white;
+  background-color: grey;
+  border: 5px solid pink;
 }
 
 .one-person {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid teal;
+  height: 50%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.one-person__portrait {
+  display: flex;
   border: 1px solid white;
+  max-height: 200px;
+  box-sizing: border-box;
+}
+
+.one-person__biography {
+  display: flex;
+  border: 1px solid white;
+  width: 80%;
+  box-sizing: border-box;
 }
