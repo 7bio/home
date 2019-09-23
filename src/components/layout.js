@@ -1,7 +1,7 @@
 import React from "react"
 import "./layout.css"
 import "./../styles/global.css"
-import PrimaryLogo from '../../static/images/logo_no_background.png';
+import PrimaryLogo from '../images/logo_no_background.png';
 import NavBar from './nav.js';
 
 export default ({ children }) => (
