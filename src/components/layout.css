@@ -24,6 +24,7 @@ a {
 
 .default__header {
   background-color: #141614;
+  text-shadow: #16AA4B 0 0 15px;
   display: flex;
   height: 12%;
   justify-content: space-between;
@@ -129,8 +130,10 @@ a {
   color: #E1E5E2;
   width: 60%;
   align-content: center;
-  top: 35%;
   text-align: center;
+  top: 22%;
+  font-size: 30px;
+  font-weight: 350;
 }
 
 .page-layout-team {
