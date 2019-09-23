@@ -2,11 +2,19 @@ body {
   color: #747474;
 }
 
-h2 {
-  margin-left: 25px;
+a {
+  color: #0B562B;
 }
 
-.landing-page {
+.page-layout {
+  width: 100%;
+  height: 100%;
+  padding: 20px 45px;
+  overflow: scroll;
+  background-color: #e6e6e6;
+}
+
+.default {
   height: 100%;
   width: 100%;
   position: absolute; top: 0; left: 0;
@@ -14,8 +22,8 @@ h2 {
   flex-direction: column;
 }
 
-.landing-page--header {
-  background-color: #3A3B37;
+.default__header {
+  background-color: #141614;
   display: flex;
   height: 12%;
   justify-content: space-between;
@@ -86,7 +94,7 @@ h2 {
   text-shadow: #16AA4B 0 0 15px;
 }
 
-.landing-page__body {
+.default__body {
   display: flex;
   height: 100%;
   box-sizing: border-box;
@@ -95,7 +103,7 @@ h2 {
 .homepage-layout__content {
   padding: 10px;
   width: 100%;
-  height: 90%;
+  height: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -126,25 +134,24 @@ h2 {
 }
 
 .page-layout-team {
-  width: 100vw;
-  height: 100vh;
-  padding: 20px;
-  overflow: scroll;
-  background-color: #e6e6e6;
+}
+
+.page-layout-team__header {
+  margin-left: 0px;
 }
 
 .one-person {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 25px 25px 25px;
+  padding: 0 25px 25px 0px;
   flex-wrap: wrap;
 }
 
 .one-person__portrait {
   display: flex;
-  max-height: 60vh;
-  max-width: 60vw;
+  max-height: 60%;
+  max-width: 60%;
   background-color: lightgrey;
   margin-right: 25px;
 }
@@ -153,23 +160,19 @@ h2 {
   display: flex;
 }
 
-.one-person__advisor {
-  margin-left: 25px;
-}
-
 /* @media (min-width: 480px) and (max-width: 768px) { */
 @media (min-width: 300px) {
   .one-person {
     flex-direction: row;
     height: auto;
-    padding: 0 25px 25px 25px;
+    padding: 0 25px 25px 0px;
   }
   .one-person__portrait {
     max-height: 200px;
     max-width: 150px;
   }
   .one-person__biography {
-    width: 60vw;
+    width: 60%;
   }
 }
 
@@ -181,6 +184,7 @@ h2 {
   -webkit-box-shadow: 0px 1px 12px rgb(192, 192, 192);
   box-shadow:         0px 1px 12px rgb(192, 192, 192);
 }
+
 .page-layout__contact {
   width: 100%;
   height: 100%;
@@ -211,4 +215,5 @@ h2 {
 
 .footer__content {
   color: #0B562B;
+  font-size: 0.875rem;
 }
