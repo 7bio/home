@@ -8,10 +8,9 @@ import RuqiantPortrait from '../../static/images/ruqiang.jpg';
 const personData = {
   "mizuno": {
     "photo": GracePortrait,
-    "bio": `Grace O. Mizuno, PhD
-
-    CEO, co-founder
-    
+    "name": 'Grace O. Mizuno, PhD',
+    "position": 'CEO, co-founder',
+    "bio": `
     11 years of experience in sensor design, animal disease modeling, in vitro + in vivo testing and molecular biology (UC Davis,
     UC San Francisco, UC San Diego, The Scripps Research Institute)
     
@@ -22,9 +21,9 @@ const personData = {
   },
   "tian": {
     "photo": LinPortrait,
-    "bio": `Lin Tian, PhD
-    Co-founder
-  
+    "name": 'Lin Tian, PhD',
+    "position": 'Co-founder',
+    "bio": `
     Principal Investigator at UC Davis (2012 – present)
     20 years of experience in sensor design, protein engineering, neuroscience, biochemistry and molecular biology (UC Davis, HHMI Janelia Farm, Northwestern Univ., Univ. of Science and Technology of China)
     NIH Director’s Innovator Award, Rita Allen Young Scholar, Hartwell Foundation Individual Biomedical Research Award, Human Frontier Science Program Young Investigator Award, HHMI Research Fellowship
@@ -33,9 +32,9 @@ const personData = {
   },
   "liang": {
     "photo": RuqiantPortrait,
-    "bio": `Ruqiang Liang, Ph.D.
-    Chief Technology Officer
-    
+    "name": 'Ruqiang Liang, Ph.D.',
+    "position": 'Chief Technology Officer',
+    "bio": `
     24 years experience in computational biology, software engineering, molecular biology, assay development and sensor design (UC Davis, Washington University, University of Louisville, University of Kentucky, Shanghai Institutes for Biological Sciences, University of Chinese Academy of Sciences, Sichuan University)
     Chinese Academy of Sciences first rank scholarship, Sichuan University scholarship
   Expert in computational (in silico) guided design and modeling (Rosetta, Chimera)`
@@ -46,25 +45,24 @@ export default () => (
   <Layout >
     <div className="page-layout-team page-layout">
       <h1 name='leadership' className="page-layout-team__header">Leadership</h1>
-      <OnePersonLeadership person="Grace Mizuno" bio={ personData.mizuno.bio } photo={ personData.mizuno.photo }/>
-      <OnePersonLeadership person="Lin Tian" bio={ personData.tian.bio } photo={ personData.tian.photo }/>
-      <OnePersonLeadership person="Ruqian Liang" bio={ personData.liang.bio } photo={ personData.liang.photo }/>
+      <OnePersonLeadership person="Grace Mizuno" info={personData.mizuno} photo={personData.mizuno.photo} />
+      <OnePersonLeadership person="Lin Tian" info={personData.tian} photo={personData.tian.photo} />
 
       <h1 name="advisors" className="page-layout-team__header">Advisors</h1>
-      <b>Lin Tian, PhD, Associate Professor</b><br/>
-      Scientific Advisor, Protein engineering + sensor design<br/><br/>
+      <b>Lin Tian, PhD, Associate Professor</b><br />
+      Scientific Advisor, Protein engineering + sensor design<br /><br />
 
-      <b>Mark Von Zastrow, MD, PhD, Professor</b><br/>
-      Scientific Advisor, GPCR + pharmacology<br/><br/>
+      <b>Mark Von Zastrow, MD, PhD, Professor</b><br />
+      Scientific Advisor, GPCR + pharmacology<br /><br />
 
-      <b>Bernardo Sabatini, MD, PhD, Professor</b><br/>
-      Scientific Advisor, In vivo imaging<br/><br/>
+      <b>Bernardo Sabatini, MD, PhD, Professor</b><br />
+      Scientific Advisor, In vivo imaging<br /><br />
 
-      <b>Kit Lam, MD, PhD, Professor</b><br/>
-      Scientific Advisor, Chemistry<br/><br/>
+      <b>Kit Lam, MD, PhD, Professor</b><br />
+      Scientific Advisor, Chemistry<br /><br />
 
-      <b>Ilan Zipkin, PhD</b><br/>
-      Business Advisor<br/><br/>
+      <b>Ilan Zipkin, PhD</b><br />
+      Business Advisor<br /><br />
     </div>
 
   </Layout>
