@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import "./layout.css"
 import "./../styles/global.css"
 import PrimaryLogo from '../../static/images/logo_no_background.png';
+import NavBar from './nav.js';
 
 export default ({ children }) => (
   <div className="landing-page">
@@ -10,28 +10,7 @@ export default ({ children }) => (
       <div className="header__logo__container">
         <img src={PrimaryLogo} className="header__img"></img>
       </div>
-      <div className="header__links">
-        <div className="header__links__single">
-          <Link to="/" className="header__links__text" activeClassName="header__links__text--active">Home</Link>
-          <div id="circle"></div>
-        </div>
-        <div className="header__links__single">
-          <Link to="/about/" className="header__links__text" activeClassName="header__links__text--active">About Us</Link>
-          <div id="circle"></div>
-        </div>
-        <div className="header__links__single">
-          <Link to="/team/" className="header__links__text" activeClassName="header__links__text--active">Our Team</Link>
-          <div id="circle"></div>
-        </div>
-        <div className="header__links__single">
-          <Link to="/news/" className="header__links__text" activeClassName="header__links__text--active">News</Link>
-          <div id="circle"></div>
-        </div>
-        <div className="header__links__single">
-          <Link to="/contact/" className="header__links__text" activeClassName="header__links__text--active">Contact</Link>
-          <div id="circle"></div>
-        </div>
-      </div>
+      <NavBar />
     </div>
     <div className="landing-page--body">
       {children}
