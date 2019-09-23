@@ -36,6 +36,11 @@ export default ({ children }) => (
     <div className="landing-page--body">
       {children}
     </div>
+    <div className="footer">
+      <div className="footer__content">
+        © 2019 Seven Biosciences, Inc.
+      </div>
+    </div>
 
   </div>
 )
