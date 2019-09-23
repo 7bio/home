@@ -44,29 +44,27 @@ const personData = {
 
 export default () => (
   <Layout >
-    <div className="page-layout-team">
-      <h2 name='leadership'>Leadership</h2>
-      <OnePersonLeadership person="Mizuno" bio={personData.mizuno.bio} photo={personData.mizuno.photo}/>
-      <OnePersonLeadership person="Tian" bio={personData.tian.bio} photo={personData.tian.photo}/>
-      <OnePersonLeadership person="Liang" bio={personData.liang.bio} photo={personData.liang.photo}/>
+    <div className="page-layout-team page-layout">
+      <h1 name='leadership' className="page-layout-team__header">Leadership</h1>
+      <OnePersonLeadership person="Grace Mizuno" bio={ personData.mizuno.bio } photo={ personData.mizuno.photo }/>
+      <OnePersonLeadership person="Lin Tian" bio={ personData.tian.bio } photo={ personData.tian.photo }/>
+      <OnePersonLeadership person="Ruqian Liang" bio={ personData.liang.bio } photo={ personData.liang.photo }/>
 
-      <h2 name="advisors">Advisors</h2>
-        <div className="one-person__advisor">
-          <b>Lin Tian, PhD, Associate Professor</b><br/>
-          Scientific Advisor, Protein engineering + sensor design<br/><br/>
+      <h1 name="advisors" className="page-layout-team__header">Advisors</h1>
+      <b>Lin Tian, PhD, Associate Professor</b><br/>
+      Scientific Advisor, Protein engineering + sensor design<br/><br/>
 
-          <b>Mark Von Zastrow, MD, PhD, Professor</b><br/>
-          Scientific Advisor, GPCR + pharmacology<br/><br/>
+      <b>Mark Von Zastrow, MD, PhD, Professor</b><br/>
+      Scientific Advisor, GPCR + pharmacology<br/><br/>
 
-          <b>Bernardo Sabatini, MD, PhD, Professor</b><br/>
-          Scientific Advisor, In vivo imaging<br/><br/>
+      <b>Bernardo Sabatini, MD, PhD, Professor</b><br/>
+      Scientific Advisor, In vivo imaging<br/><br/>
 
-          <b>Kit Lam, MD, PhD, Professor</b><br/>
-          Scientific Advisor, Chemistry<br/><br/>
+      <b>Kit Lam, MD, PhD, Professor</b><br/>
+      Scientific Advisor, Chemistry<br/><br/>
 
-          <b>Ilan Zipkin, PhD</b><br/>
-          Business Advisor<br/><br/>
-        </div>
+      <b>Ilan Zipkin, PhD</b><br/>
+      Business Advisor<br/><br/>
     </div>
 
   </Layout>
