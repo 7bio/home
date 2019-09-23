@@ -9,7 +9,7 @@ class NavBar extends React.PureComponent {
         <NavLink destination='/about/' text='About' />
         <NavLink destination='/team/' text='Team' />
         <NavLink destination='/news/' text='News' />
-        <NavLink destination='/contact' text='Contact' />
+        <NavLink destination='/contact/' text='Contact' />
       </div>);
   }
 }
