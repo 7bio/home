@@ -12,7 +12,7 @@ export default ({ children }) => (
       </div>
       <NavBar />
     </div>
-    <div className="landing-page--body">
+    <div className="landing-page__body">
       {children}
     </div>
     <div className="footer">

@@ -69,11 +69,12 @@ body {
   height: 100%;
   width: 100%;
   position: absolute; top: 0; left: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .landing-page--header {
-  background-color: #141614;
-  border: 1px solid black;
+  background-color: #3A3B37;
   display: flex;
   height: 12%;
   justify-content: space-between;
@@ -114,7 +115,6 @@ body {
 .header__links__single:hover .header__links__text{
   color: #16AA4B;
   text-decoration: none;
-  text-shadow: #16AA4B 0 0 15px;
 }
 
 .header__links__text {
@@ -132,12 +132,12 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
+  
 }
 
 .header__links__single:hover #circle{
   background: #16AA4B;
   text-decoration: none;
-  text-shadow: #16AA4B 0 0 15px;
 }
 
 .header__links__text--active {
@@ -145,37 +145,43 @@ body {
   text-shadow: #16AA4B 0 0 15px;
 }
 
-.landing-page--body {
+.landing-page__body {
   display: flex;
   height: 100%;
   box-sizing: border-box;
 }
 
-.page-layout {
+.homepage-layout__content {
+  padding: 10px;
   width: 100%;
-  height: 100%;
+  height: 90%;
   box-sizing: border-box;
-  padding: 20px;
-  background-color: #3A3B37;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 'content image'
-}
-
-.page-layout__content {
   display: flex;
-  color: #E1E5E2;
-  background-color: #141614;
-  grid-area: 'content';
-  justify-items: center;
+  justify-content: center;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
 }
 
-.page-layout__image {
-  grid-area: 'image';
+#homepage-layout__background-image {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  max-width: auto;
+  max-height: 100%;
+  opacity: 0.65;
+}
+
+.homepage-layout__text {
+  position: absolute;
+  z-index: 100;
+  position: absolute;
+  color: #E1E5E2;
+  width: 60%;
+  align-content: center;
+  top: 35%;
+  text-align: center;
 }
 
 .page-layout-team {
