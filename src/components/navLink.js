@@ -6,7 +6,7 @@ class NavLink extends React.PureComponent {
     const { destination, text } = this.props;
     return (
       <div className="header__links__single">
-        <a href={destination} className="header__links__text" activeClassName="header__links__text--active">{text}</a>
+        <Link to={destination} className="header__links__text" activeClassName="header__links__text--active">{text}</Link>
         <div id="circle" />
       </div>
     );
