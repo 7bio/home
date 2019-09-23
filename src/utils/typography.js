@@ -1,13 +1,22 @@
 import Typography from "typography"
-import moragaTheme from "typography-theme-moraga"
+import noriegaTheme from "typography-theme-noriega"
 
-moragaTheme.bodyFontFamily = ['Lato'];
-moragaTheme.headerFontFamily = ['Lato'];
+noriegaTheme.bodyFontFamily = ['Lato'];
+noriegaTheme.headerFontFamily = ['Lato'];
 
 const typography = new Typography(
-  moragaTheme
+  noriegaTheme
 )
-
+// const typography = new Typography({
+//   baseFontSize: "18px",
+//   baseLineHeight: 1.666,
+//   headerFontFamily: [
+//     "Lato",
+//     "sans-serif",
+//   ],
+//   bodyFontFamily: ["Lato", "sans-serif"],
+// })
+typography.injectStyles()
 
 // export const { scale, rhythm, options } = typography
 export default typography
