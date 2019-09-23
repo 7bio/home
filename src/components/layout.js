@@ -8,7 +8,7 @@ export default ({ children }) => (
   <div className="default">
     <div className="default__header">
       <div className="header__logo__container">
-        <img src={PrimaryLogo} className="header__img" alt="logo for Seven Biosciences" />
+        <img src={ PrimaryLogo } className="header__img" alt="logo for Seven Biosciences" />
       </div>
       <NavBar />
     </div>
@@ -17,7 +17,7 @@ export default ({ children }) => (
     </div>
     <div className="footer">
       <div className="footer__content">
-        <a href="/contact">Reach out</a> to us for more information about our services &nbsp; &nbsp; &nbsp; © 2019 Seven Biosciences, Inc.
+        © 2019 Seven Biosciences, Inc.
       </div>
     </div>
   </div>
