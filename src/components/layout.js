@@ -1,8 +1,8 @@
-import React from "react"
-import "./layout.css"
-import "./../styles/global.css"
-import PrimaryLogo from "../images/logo_no_background.png"
-import NavBar from "./nav.js"
+import React from 'react';
+import './layout.css';
+import './../styles/global.css';
+import PrimaryLogo from '../images/logo_no_background.png';
+import NavBar from './nav.js';
 
 export default ({ children }) => (
   <div className="default">
@@ -21,4 +21,4 @@ export default ({ children }) => (
       <div className="footer__content">© 2019 Seven Biosciences, Inc.</div>
     </div>
   </div>
-)
+);

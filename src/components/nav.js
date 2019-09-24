@@ -1,5 +1,5 @@
-import React from "react"
-import NavLink from "./navLink"
+import React from 'react';
+import NavLink from './navLink';
 
 class NavBar extends React.PureComponent {
   render() {
@@ -11,8 +11,8 @@ class NavBar extends React.PureComponent {
         <NavLink destination="/news/" text="News" />
         <NavLink destination="/contact" text="Contact" />
       </div>
-    )
+    );
   }
 }
 
-export default NavBar
+export default NavBar;

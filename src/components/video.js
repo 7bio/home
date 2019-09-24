@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
   <div className="video-wrapper">
@@ -12,6 +12,6 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
       allowFullScreen
     />
   </div>
-)
+);
 
-export default Video
+export default Video;

@@ -1,6 +1,6 @@
-import React from "react"
-import Layout from "../components/layout"
-import HomeBackgroundImage from "../../static/images/GPCR2-1024x606.jpg"
+import React from 'react';
+import Layout from '../components/layout';
+import HomeBackgroundImage from '../../static/images/GPCR2-1024x606.jpg';
 
 export default () => (
   <Layout>
@@ -17,4 +17,4 @@ export default () => (
       </p>
     </div>
   </Layout>
-)
+);

@@ -1,9 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
 class NavLink extends React.PureComponent {
   render() {
-    const { destination, text } = this.props
+    const { destination, text } = this.props;
     return (
       <div className="header__links__single">
         <Link
@@ -15,8 +15,8 @@ class NavLink extends React.PureComponent {
         </Link>
         <div id="circle" />
       </div>
-    )
+    );
   }
 }
 
-export default NavLink
+export default NavLink;

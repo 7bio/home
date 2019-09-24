@@ -1,5 +1,5 @@
 // import React, { memo } from 'react';
-import React from "react"
+import React from 'react';
 
 const OnePersonLeadership = props => (
   <div className="one-person">
@@ -16,7 +16,7 @@ const OnePersonLeadership = props => (
       <br />
     </div>
   </div>
-)
+);
 
-export default OnePersonLeadership
+export default OnePersonLeadership;
 // export default memo(OnePersonLeadership);
