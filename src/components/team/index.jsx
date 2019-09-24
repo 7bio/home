@@ -1,22 +1,29 @@
-// import React, { memo } from 'react';
-import React from 'react';
+import React, { memo } from 'react';
+import PropTypes from 'prop-types';
 
-const OnePersonLeadership = props => (
+const OnePersonLeadership = ({ photo, person, name, subheading, bio }) => (
   <div className="one-person">
     <img
       className="one-person__portrait shadowed"
-      src={props.photo}
-      alt={`portrait of ${props.person}`}
+      src={photo}
+      alt={`portrait of ${person}`}
     />
     <div className="one-person__biography">
-      <b>{props.name}</b>
-      <p>{props.subheading}</p>
-      {props.bio}
+      <b>{name}</b>
+      <p>{subheading}</p>
+      {bio}
       <br />
       <br />
     </div>
   </div>
 );
 
-export default OnePersonLeadership;
-// export default memo(OnePersonLeadership);
+export default memo(OnePersonLeadership);
+
+OnePersonLeadership.propTypes = {
+  photo: PropTypes.string.isRequired,
+  person: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  subheading: PropTypes.string.isRequired,
+  bio: PropTypes.string.isRequired,
+};

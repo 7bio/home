@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
 class NavLink extends React.PureComponent {
   render() {
@@ -20,3 +21,8 @@ class NavLink extends React.PureComponent {
 }
 
 export default NavLink;
+
+NavLink.propTypes = {
+  destination: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};

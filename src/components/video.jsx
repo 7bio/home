@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
   <div className="video-wrapper">
@@ -15,3 +16,13 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
 );
 
 export default Video;
+
+Video.propTypes = {
+  videoSrcURL: PropTypes.string.isRequired,
+  videoTitle: PropTypes.string.isRequired,
+  props: PropTypes.shape,
+};
+
+Video.defaultProps = {
+  props: {},
+};
