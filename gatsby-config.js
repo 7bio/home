@@ -13,5 +13,5 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/home",
-}
+  pathPrefix: '/home',
+};
