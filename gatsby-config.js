@@ -12,7 +12,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-  
   ],
   pathPrefix: "/home",
 }

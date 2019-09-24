@@ -1,12 +1,10 @@
 import Typography from "typography"
 import noriegaTheme from "typography-theme-noriega"
 
-noriegaTheme.bodyFontFamily = ['Lato'];
-noriegaTheme.headerFontFamily = ['Lato'];
+noriegaTheme.bodyFontFamily = ["Lato"]
+noriegaTheme.headerFontFamily = ["Lato"]
 
-const typography = new Typography(
-  noriegaTheme
-)
+const typography = new Typography(noriegaTheme)
 // const typography = new Typography({
 //   baseFontSize: "18px",
 //   baseLineHeight: 1.666,

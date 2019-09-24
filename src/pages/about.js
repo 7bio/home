@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react"
 // import Header from '../components/header';
-import Layout from '../components/layout';
-import Video from '../components/video';
-
+import Layout from "../components/layout"
+import Video from "../components/video"
 
 export default () => (
   <Layout style={{ color: `teal` }}>
@@ -12,7 +11,7 @@ export default () => (
         videoSrcURL="http://youtube.com/embed/ll2bNRyKMNA?theme=dark&color=white&autoplay=1&loop=1"
         videoTitle="Demonstration"
         // videoSrcURL="http://youtube.com/embed/listType=user_uploads&list=UCoYHe8nNs3qsbMTiw9pikJg"
-        />
+      />
     </div>
-  </Layout >
+  </Layout>
 )
