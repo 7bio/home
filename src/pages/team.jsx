@@ -62,11 +62,6 @@ export default () => (
       Scientific Advisor, GPCR + pharmacology
       <br />
       <br />
-      <b>Bernardo Sabatini, MD, PhD, Professor</b>
-      <br />
-      Scientific Advisor, In vivo imaging
-      <br />
-      <br />
       <b>Kit Lam, MD, PhD, Professor</b>
       <br />
       Scientific Advisor, Chemistry
