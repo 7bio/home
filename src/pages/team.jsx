@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import OnePersonLeadership from '../components/team';
 import GracePortrait from '../../static/images/grace.jpg';
-import LinPortrait from '../../static/images/lin.jpg';
+import LinPortrait from '../../static/images/lin.JPG';
 import RuqiantPortrait from '../../static/images/ruqiang.jpg';
 
 const personData = {
