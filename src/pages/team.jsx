@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import OnePersonLeadership from '../components/team';
 import GracePortrait from '../../static/images/grace.jpg';
-// import LinPortrait from '../../static/images/lin.jpg';
+import LinPortrait from '../../static/images/lin.jpg';
 import RuqiantPortrait from '../../static/images/ruqiang.jpg';
 
 const personData = {
@@ -14,7 +14,7 @@ const personData = {
       '11 years of experience in sensor design, in vitro and in vivo functional disease modeling, biochemistry and molecular biology. ARCS Scholar, Loren D. Carlson dissertation award recipient, Max Kleiber gradate research award recipient, 3-Minute Pitch winner.',
   },
   tian: {
-    photo: GracePortrait,
+    photo: LinPortrait,
     name: 'Lin Tian, Ph.D.',
     subheading: 'Co-Founder',
     bio:
