@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Video = ({ videoSrcURL, videoTitle, ...props }) => (
+const Video = ({ videoSrcURL, videoTitle }) => (
   <div className="video-wrapper">
     <iframe
       src={videoSrcURL}
@@ -20,9 +20,6 @@ export default Video;
 Video.propTypes = {
   videoSrcURL: PropTypes.string.isRequired,
   videoTitle: PropTypes.string.isRequired,
-  props: PropTypes.shape,
 };
 
-Video.defaultProps = {
-  props: {},
-};
+Video.defaultProps = {};
