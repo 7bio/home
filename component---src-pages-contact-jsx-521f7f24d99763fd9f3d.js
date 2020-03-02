@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{w2EZ:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),c=t.n(n),s=t("L12J");a.default=function(){return c.a.createElement(s.a,null,c.a.createElement("div",{className:"page-layout"},c.a.createElement("h1",{className:"contact-page__header"},"Contact"),c.a.createElement("p",{className:"page-layout__text"},c.a.createElement("a",{href:"mailto:info@sevenbiosciences.com",className:"page-layout__text"},"info@sevenbiosciences.com"))))}}}]);
+//# sourceMappingURL=component---src-pages-contact-jsx-521f7f24d99763fd9f3d.js.map
