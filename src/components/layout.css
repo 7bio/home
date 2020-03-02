@@ -138,7 +138,7 @@ a {
   flex-direction: column;
   background-color: black;
   position: relative;
-  overflow: scroll;
+  overflow: hidden
 }
 
 #homepage-layout__background-image {
@@ -264,6 +264,7 @@ a {
   align-items: center;
   height: 8%;
   background-color: #141614;
+  position: relative;
 }
 
 .footer__content {
