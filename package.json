@@ -17,6 +17,7 @@
   "dependencies": {
     "gatsby": "^2.18.21",
     "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-plugin-typography": "^2.3.21",
     "heroku": "^7.38.1",
     "prop-types": "^15.7.2",
