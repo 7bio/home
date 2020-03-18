@@ -1,11 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import './layout.css';
+import './styles.css';
 import '../styles/global.css';
 import PropTypes from 'prop-types';
 
 import PrimaryLogo from '../images/logo_no_background.png';
-import NavBar from './nav';
+import NavBar from './NavBar';
 import favicon from '../images/gpcr_favicon.png';
 
 export default Object.assign(
@@ -18,26 +18,24 @@ export default Object.assign(
           { rel: 'shortcut icon', type: 'image/x-icon', href: `${favicon}` },
         ]}
       />
-      <main>
-        <div className="default">
-          <div className="default__header">
-            <div className="header__logo__container">
-              <img
-                src={PrimaryLogo}
-                className="header__img"
-                alt="logo for Seven Biosciences"
-              />
-            </div>
-            <NavBar />
+      <div className="main">
+        <div className="main__header">
+          <div className="header__logo__container">
+            <img
+              src={PrimaryLogo}
+              className="header__img"
+              alt="logo for Seven Biosciences"
+            />
           </div>
-          <div className="default__body">{children}</div>
-          <div className="footer">
-            <div className="footer__content">
-              © 2019 Seven Biosciences, Inc.
-            </div>
+          <NavBar />
+        </div>
+        <div className="main__body">{children}</div>
+        <div className="main__footer">
+          <div className="main__footer__content">
+            © 2019 Seven Biosciences, Inc.
           </div>
         </div>
-      </main>
+      </div>
     </div>
   ),
   { propTypes: { children: PropTypes.string.isRequired } }

@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/layout';
-import OnePersonLeadership from '../components/team';
+import Layout from '../components/Layout';
+import OnePersonLeadership from '../components/team/OnePersonLeadership';
 import GracePortrait from '../../static/images/grace.jpg';
 import LinPortrait from '../../static/images/lin.jpg';
 import RuqiantPortrait from '../../static/images/ruqiang.jpg';
@@ -32,7 +32,7 @@ const personData = {
 
 export default () => (
   <Layout>
-    <div className="page-layout-team page-layout">
+    <div className="page-layout">
       <h1 name="leadership" className="page-layout-team__header">
         Leadership
       </h1>

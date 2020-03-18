@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import HomeBackgroundImage from '../../static/images/GPCR2-1024x606.jpg';
 
 export default () => (
