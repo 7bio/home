@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{caX5:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),c=t.n(n),l=t("L6Je");a.default=function(){return c.a.createElement(l.a,null,c.a.createElement("div",{className:"page-layout"},c.a.createElement("h1",{className:"page-layout__header"},"News"),c.a.createElement("p",{className:"page-layout__text"},"Coming soon...")))}}}]);
+//# sourceMappingURL=component---src-pages-news-jsx-d68b6cf3720b9dab5003.js.map
