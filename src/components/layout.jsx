@@ -5,7 +5,7 @@ import '../styles/global.css';
 import PropTypes from 'prop-types';
 
 import PrimaryLogo from '../images/logo_no_background.png';
-import NavBar from './NavBar';
+import NavigationBar from './NavigationBar';
 import favicon from '../images/gpcr_favicon.png';
 
 export default Object.assign(
@@ -27,7 +27,7 @@ export default Object.assign(
               alt="logo for Seven Biosciences"
             />
           </div>
-          <NavBar />
+          <NavigationBar />
         </div>
         <div className="main__body">{children}</div>
         <div className="main__footer">

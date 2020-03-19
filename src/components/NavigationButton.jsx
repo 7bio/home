@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
-class NavLink extends React.PureComponent {
+class NavigationButton extends React.PureComponent {
   render() {
     const { destination, text } = this.props;
     return (
@@ -20,9 +20,9 @@ class NavLink extends React.PureComponent {
   }
 }
 
-export default NavLink;
+export default NavigationButton;
 
-NavLink.propTypes = {
+NavigationButton.propTypes = {
   destination: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
