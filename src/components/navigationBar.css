@@ -1,0 +1,33 @@
+/* .nav-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh
+} */
+
+.burger {
+  display: flex;
+  width: 80px;
+  height: 40px;
+  background-color: pink;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger__line {
+  display: flex;
+  width: 45px;
+  height: 5px;
+  background-color: var(--primary-green);
+}
+/* 
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  display: none;
+  cursor: pointer;
+} */

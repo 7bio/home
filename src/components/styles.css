@@ -48,7 +48,7 @@ a {
   padding-right: 30px;
 }
 
-.header__logo__container {
+.main__header__logo__container {
   display: flex;
   height: 100%;
   width: 20%;
@@ -58,27 +58,6 @@ a {
   margin-top: 9px;
 }
 
-.header__img {
-  display: block;
-  margin: 0 auto;
-}
-
-.nav-links {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 8vh
-}
-
-.burger div {
-  width: 25px;
-  height: 5px;
-  background-color: rgb(226, 226, 226);
-  margin: 5px;
-  display: none;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 768px) {
   body{
