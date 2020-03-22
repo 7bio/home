@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import './layout.css';
+import 'typeface-lato';
 // import '../styles/global.css';
 import PropTypes from 'prop-types';
 

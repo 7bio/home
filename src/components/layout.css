@@ -2,6 +2,8 @@
   --primary-green: #16AA4B;
   --primary-white: #E1E5E2;
   --primary-black: #141514;
+  --secondary-green: #0B562B;
+  --secondary-grey: #3A3B37;
 }
 
 html, body, #___gatsby, #gatsby-focus-wrapper {
@@ -9,6 +11,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   padding: 0;
   height: 100%;
   background-color: white;
+  font-family: 'lato', 'Times New Roman', Times
 }
 
 /* a {
