@@ -9,8 +9,8 @@
 .burger {
   display: flex;
   width: 80px;
-  height: 40px;
-  background-color: pink;
+  height: 25px;
+  /* background-color: pink; */
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -18,8 +18,8 @@
 
 .burger__line {
   display: flex;
-  width: 45px;
-  height: 5px;
+  width: 35px;
+  height: 3px;
   background-color: var(--primary-green);
 }
 /* 

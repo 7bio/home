@@ -2,12 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import './layout.css';
 import 'typeface-lato';
-// import '../styles/global.css';
 import PropTypes from 'prop-types';
 
-import PrimaryLogo from '../images/logo_no_background.png';
+import PrimaryLogo from '../../static/images/top_left_logo.png';
 import NavigationBar from './NavigationBar';
-import favicon from '../images/gpcr_favicon.png';
+import favicon from '../../static/images/favicon.png';
 
 export default Object.assign(
   ({ children }) => (
@@ -30,7 +29,7 @@ export default Object.assign(
           </div>
           <NavigationBar />
         </div>
-        <div className="main__body">hello</div>
+        <div className="main__body">{children}</div>
         <div className="main__footer">
           <div className="main__footer__content">
             © 2019 Seven Biosciences, Inc.
@@ -42,4 +41,4 @@ export default Object.assign(
   { propTypes: { children: PropTypes.string.isRequired } }
 );
 
-// https://stackoverflow.com/questions/51271992/adding-proptypes-to-unnamed-anonymous-default-exported-functions-e-i-export-d
+// what the

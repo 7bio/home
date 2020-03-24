@@ -14,10 +14,6 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   font-family: 'lato', 'Times New Roman', Times
 }
 
-/* a {
-  color: #0B562B;
-} */
-
 img {
   margin-bottom: 0;
 }
@@ -43,16 +39,7 @@ img {
 }
 
 .main__header__logo__container {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 28%;
-  height: 100%;
-  height: 0;
-  padding-bottom: 5%; */
-  /* position: relative; */
   flex: 1 1 28%;  /*grow | shrink | basis */
-  /* background-color: blueviolet; */
   line-height: 0;
 }
 
@@ -62,23 +49,24 @@ img {
   max-width: 239px;
   height: auto;
   margin: auto;
-
-  /* min-width: 191px;
-  min-height: 34px;
-  max-width: 239px;
-  max-height: 43px;  */
 }
 
 .main__body {
   display: flex;
   background-color: white;
-  height: auto;
-  width: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 .main__footer {
   display: flex;
-  background-color: pink;
-  height: 25%;
-  width: 200px;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: var(--primary-black);
+}
+
+.main__footer__content {
+  color: var(--primary-green);
+  font-size: 0.875rem;
 }

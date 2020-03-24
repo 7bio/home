@@ -1,9 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import OnePersonLeadership from '../components/team/OnePersonLeadership';
-import GracePortrait from '../../static/images/grace.jpg';
-import LinPortrait from '../../static/images/lin.jpg';
-import RuqiantPortrait from '../../static/images/ruqiang.jpg';
+import GracePortrait from '../../static/images/team_members/grace.jpg';
+import LinPortrait from '../../static/images/team_members/lin.jpg';
 
 const personData = {
   mizuno: {
@@ -20,14 +19,14 @@ const personData = {
     bio:
       'Associate Professor at UC Davis (2012 – present). Engineered the most utilized Ca2+ biosensor (GCaMP3) which established the basis of Obama’s BRAIN Initiative with 20 years of experience in sensor design, protein engineering, neuroscience, biochemistry and molecular biology. Recipient of NIH Director’s Innovator Award, Rita Allen Young Scholar, Hartwell Foundation Individual Biomedical Research Award, Human Frontier Science Program Young Investigator Award, HHMI Research Fellowship.',
   },
-  liang: {
-    photo: RuqiantPortrait,
-    name: 'Ruqiang Liang, Ph.D.',
-    subheading: 'Chief Technology Officer',
-    bio: `24 years experience in computational biology, software engineering, molecular biology, assay development and sensor design (UC Davis, Washington University, University of Louisville, University of Kentucky, Shanghai Institutes for Biological Sciences, University of Chinese Academy of Sciences, Sichuan University)
-      Chinese Academy of Sciences first rank scholarship, Sichuan University scholarship
-      Expert in computational (in silico) guided design and modeling (Rosetta, Chimera)`,
-  },
+  // liang: {
+  //   photo: RuqiantPortrait,
+  //   name: 'Ruqiang Liang, Ph.D.',
+  //   subheading: 'Chief Technology Officer',
+  //   bio: `24 years experience in computational biology, software engineering, molecular biology, assay development and sensor design (UC Davis, Washington University, University of Louisville, University of Kentucky, Shanghai Institutes for Biological Sciences, University of Chinese Academy of Sciences, Sichuan University)
+  //     Chinese Academy of Sciences first rank scholarship, Sichuan University scholarship
+  //     Expert in computational (in silico) guided design and modeling (Rosetta, Chimera)`,
+  // },
 };
 
 export default () => (
