@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import './NavigationButton.css';
 
 class NavigationButton extends React.PureComponent {
   render() {
@@ -14,7 +15,7 @@ class NavigationButton extends React.PureComponent {
         >
           {text}
         </Link>
-        <div id="circle" />
+        {/* <div id="circle" /> */}
       </div>
     );
   }
