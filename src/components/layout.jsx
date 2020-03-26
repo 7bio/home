@@ -39,7 +39,7 @@ export default Object.assign(
           </div>
           <NavigationBar />
         </div>
-        <div className="main__body">hello</div>
+        <div className="main__body">{children}</div>
         <div className="main__footer">
           <div className="main__footer__content">
             © 2019 Seven Biosciences, Inc.
@@ -50,5 +50,3 @@ export default Object.assign(
   ),
   { propTypes: { children: PropTypes.string.isRequired } }
 );
-
-// what the
