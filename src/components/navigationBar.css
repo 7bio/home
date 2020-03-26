@@ -1,23 +1,33 @@
-.main__header__links__container {
-  flex: 1 1 65%;  /*grow | shrink | basis */
+/* .main__header__links__container {
+  flex: 1 1 65%;  
   line-height: 0;
   flex-direction: row;
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
+  background-color: skyblue;
+  align-items: center;
+} */
+
+.main__header__links__container {
+  height: 100%;
+  width: 80%
 }
 
 .nav-links {
-  /* width: 50%; */
-  /* display: inline-block; */
+  float: left;
   display: flex;
-  /* float: left; */
   align-items: center;
   justify-content: space-evenly;
   width: 90%;
-  height: auto;
-  /* background-color: pink; */
+  height: 100%;
+  margin: 0;
 }
+
+.nav-links li {
+  list-style: none;
+}
+
 
 /* .burger div {
   display: flex;
@@ -29,17 +39,76 @@
 } */
 
 .burger {
-  display: flex;
-  /* width: 5%; */
-  height: 50px;
+  display: none;
+  /* display: flex; */
+  /* background-color: gray; */
+  flex: 1 2 ;
   flex-direction: column;
-  justify-content: space-around;
+  float: right;
+  height: 50px;
+  width: 30px;
+  justify-content: center;
   align-items: center;
-  /* background-color: skyblue; */
+}
+
+.burger:hover {
+  cursor: pointer;
 }
 
 .burger > div {
-  width: 35px;
+  width: 25px;
   height: 3px;
+  margin: 5px;
   background-color: var(--primary-green);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  body, html{
+    overflow-x: hidden;
+  }
+  .nav-links { 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    width: 50%; 
+    height: 65%;
+    top: 70px;
+    background-color: var(--primary-black);
+    transform: translateX(100%);
+    transition: all transform 0.5s ease-in;
+    z-index: 2;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: flex;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%)
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translate(50px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-8px, 10px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-8px, -10px);
 }

@@ -38,10 +38,18 @@ img {
   max-height: 11%;
 }
 
+
 .main__header__logo__container {
   flex: 1 1 35%;  /*grow | shrink | basis */
   line-height: 0;
   /* background-color: aqua; */
+}
+
+@media screen and (max-width: 730px) {
+  .main__header__logo__container {
+    flex: 1 1 55%;  
+    line-height: 0;
+  }
 }
 
 /* 239 x 43 */
