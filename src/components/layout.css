@@ -6,6 +6,11 @@
   --secondary-grey: #3A3B37;
 }
 
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 html, body, #___gatsby, #gatsby-focus-wrapper {
   margin: 0;
   padding: 0;
@@ -79,3 +84,4 @@ img {
   color: var(--primary-green);
   font-size: 0.875rem;
 }
+

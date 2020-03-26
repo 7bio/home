@@ -35,10 +35,6 @@ class NavigationBar extends React.PureComponent {
   render() {
     const { condition } = this.state;
 
-    if (typeof window !== 'undefined') {
-      this.window = window.location.href;
-    }
-
     // let resizeTimer;
     // window.addEventListener('resize', () => {
     //   document.body.classList.add('resize-animation-stopper');
