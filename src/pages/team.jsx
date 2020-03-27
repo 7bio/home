@@ -1,4 +1,6 @@
 import React from 'react';
+import './team.css';
+
 import Layout from '../components/Layout';
 import OnePersonLeadership from '../components/team/OnePersonLeadership';
 import GracePortrait from '../../static/images/team_members/grace.jpg';

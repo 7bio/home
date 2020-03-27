@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
+import './onePersonLeadership.css';
 
 const OnePersonLeadership = ({ photo, person, name, subheading, bio }) => (
   <div className="one-person">
@@ -7,6 +8,7 @@ const OnePersonLeadership = ({ photo, person, name, subheading, bio }) => (
       className="one-person__portrait shadowed"
       src={photo}
       alt={`portrait of ${person}`}
+      style={{ width: '150px', height: '187px' }}
     />
     <div className="one-person__biography">
       <b>{name}</b>
