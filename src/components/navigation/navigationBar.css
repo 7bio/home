@@ -20,7 +20,7 @@
 }
 
 .nav-links li:hover {
-  text-shadow: #16AA4B 0 0 15px;
+  text-shadow: var(--primary-green) 0 0 15px;
 }
 
 .burger {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import './navigationLink.css';
 
 class NavigationLink extends React.PureComponent {
   render() {
@@ -9,8 +10,8 @@ class NavigationLink extends React.PureComponent {
       <li>
         <Link
           to={destination}
-          className="header__links__text"
-          activeClassName="header__links__text--active"
+          className="header__link__a"
+          activeClassName="header__link__a--active"
         >
           {text}
         </Link>

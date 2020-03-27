@@ -1,8 +1,6 @@
 import React from 'react';
 import './navigationBar.css';
-import { Link } from 'gatsby';
 
-import NavigationButton from './NavigationButton';
 import NavigationLink from './NavigationLink';
 
 class NavigationBar extends React.PureComponent {
@@ -15,7 +13,7 @@ class NavigationBar extends React.PureComponent {
     };
 
     this.handleClick = () => {
-      const { condition, myList, burger } = this.state;
+      const { myList, burger } = this.state;
       myList.classList.toggle('nav-active');
       // animate links
       myList.childNodes.forEach((link, index) => {
@@ -64,11 +62,5 @@ class NavigationBar extends React.PureComponent {
     );
   }
 }
-
-/* <NavigationButton destination="/" text="Home" />
-            <NavigationButton destination="/about/" text="About" />
-            <NavigationButton destination="/team/" text="Team" />
-            <NavigationButton destination="/news/" text="News" />
-            <NavigationButton destination="/contact" text="Contact" /> */
 
 export default NavigationBar;
