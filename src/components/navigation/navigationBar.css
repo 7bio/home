@@ -13,6 +13,7 @@
   width: 90%;
   height: 100%;
   margin: 0;
+  padding-top: 10px;
 }
 
 .nav-links li {
@@ -97,11 +98,11 @@
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-6px, 7px);
+  transform: rotate(-45deg) translate(-6px, 6.5px);
 }
 .toggle .line2 {
   opacity: 0;
 }
 .toggle .line3 {
-  transform: rotate(45deg) translate(-6px, -7px);
+  transform: rotate(45deg) translate(-6px, -6.5px);
 }
