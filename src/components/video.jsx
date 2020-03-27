@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './video.css';
 
 const Video = ({ videoSrcURL, videoTitle }) => (
   <div className="video-wrapper">
@@ -11,6 +12,7 @@ const Video = ({ videoSrcURL, videoTitle }) => (
       webkitallowfullscreen="true"
       mozallowfullscreen="true"
       allowFullScreen
+      className="iframe-style"
     />
   </div>
 );
