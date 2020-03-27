@@ -19,6 +19,10 @@
   list-style: none;
 }
 
+.nav-links li:hover {
+  text-shadow: #16AA4B 0 0 15px;
+}
+
 .burger {
   display: none;
   flex: 1 2 ;

@@ -15,7 +15,7 @@ class NavigationButton extends React.PureComponent {
         >
           {text}
         </Link>
-        {/* <div id="circle" /> */}
+        {/* <div id="ow" /> */}
       </div>
     );
   }

@@ -5,10 +5,10 @@ import 'typeface-lato';
 import PropTypes from 'prop-types';
 
 import PrimaryLogo from '../../static/images/top_left_logo.png';
-import NavigationBar from './NavigationBar';
+import NavigationBar from './navigation/NavigationBar';
 import favicon from '../../static/images/favicon.png';
 
-console.log('document is', document);
+// prevent animations while user resizes screen
 let resizeTimer;
 window.addEventListener('resize', () => {
   document.body.classList.add('resize-animation-stopper');

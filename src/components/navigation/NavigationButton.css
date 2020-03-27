@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  /* background-color: aliceblue; */
 }
 
 .header__links__single:hover .header__links__text {
@@ -32,12 +31,12 @@
 
 .header__links__single:hover #circle {
   background: #16AA4B;
-  -o-box-shadow:      0px 0px 18px #16AA4B;
-  -icab-box-shadow:   0px 0px 18px #16AA4B;
-  -khtml-box-shadow:  0px 0px 18px #16AA4B;
-  -moz-box-shadow:    0px 0px 18px #16AA4B;
-  -webkit-box-shadow: 0px 0px 18px #16AA4B;
-  box-shadow:         0px 0px 18px #16AA4B;
+  -o-box-shadow:      0px 0px 18px var(--primary-green);
+  -icab-box-shadow:   0px 0px 18px var(--primary-green);
+  -khtml-box-shadow:  0px 0px 18px var(--primary-green);
+  -moz-box-shadow:    0px 0px 18px var(--primary-green);
+  -webkit-box-shadow: 0px 0px 18px var(--primary-green);
+  box-shadow:         0px 0px 18px var(--primary-green);
 }
 
 .header__links__text--active {
