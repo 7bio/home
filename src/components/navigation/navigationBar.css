@@ -20,10 +20,6 @@
   list-style: none;
 }
 
-.nav-links li:hover {
-  text-shadow: var(--primary-green) 0 0 15px;
-}
-
 .burger {
   display: none;
   flex: 1 2 ;

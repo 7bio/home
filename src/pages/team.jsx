@@ -3,19 +3,19 @@ import './team.css';
 
 import Layout from '../components/Layout';
 import OnePersonLeadership from '../components/team/OnePersonLeadership';
-import GracePortrait from '../../static/images/team_members/grace.jpg';
-import LinPortrait from '../../static/images/team_members/lin.jpg';
+import LinPortrait2 from '../../static/images/team_members/lin_600x750.jpg';
+import GracePortrait2 from '../../static/images/team_members/grace_600x750.jpg';
 
 const personData = {
   mizuno: {
-    photo: GracePortrait,
+    photo: GracePortrait2,
     name: 'Grace O. Mizuno, Ph.D.',
     subheading: 'Co-Founder & CEO',
     bio:
       '11 years of experience in sensor design, in vitro and in vivo functional disease modeling, biochemistry and molecular biology. ARCS Scholar, Loren D. Carlson dissertation award recipient, Max Kleiber gradate research award recipient, 3-Minute Pitch winner.',
   },
   tian: {
-    photo: LinPortrait,
+    photo: LinPortrait2,
     name: 'Lin Tian, Ph.D.',
     subheading: 'Co-Founder',
     bio:
