@@ -1,33 +1,34 @@
 import React from 'react';
+import './team.css';
+
 import Layout from '../components/Layout';
 import OnePersonLeadership from '../components/team/OnePersonLeadership';
-import GracePortrait from '../../static/images/grace.jpg';
-import LinPortrait from '../../static/images/lin.jpg';
-import RuqiantPortrait from '../../static/images/ruqiang.jpg';
+import LinPortrait2 from '../../static/images/team_members/lin_600x750.jpg';
+import GracePortrait2 from '../../static/images/team_members/grace_600x750.jpg';
 
 const personData = {
   mizuno: {
-    photo: GracePortrait,
+    photo: GracePortrait2,
     name: 'Grace O. Mizuno, Ph.D.',
     subheading: 'Co-Founder & CEO',
     bio:
       '11 years of experience in sensor design, in vitro and in vivo functional disease modeling, biochemistry and molecular biology. ARCS Scholar, Loren D. Carlson dissertation award recipient, Max Kleiber gradate research award recipient, 3-Minute Pitch winner.',
   },
   tian: {
-    photo: LinPortrait,
+    photo: LinPortrait2,
     name: 'Lin Tian, Ph.D.',
     subheading: 'Co-Founder',
     bio:
       'Associate Professor at UC Davis (2012 – present). Engineered the most utilized Ca2+ biosensor (GCaMP3) which established the basis of Obama’s BRAIN Initiative with 20 years of experience in sensor design, protein engineering, neuroscience, biochemistry and molecular biology. Recipient of NIH Director’s Innovator Award, Rita Allen Young Scholar, Hartwell Foundation Individual Biomedical Research Award, Human Frontier Science Program Young Investigator Award, HHMI Research Fellowship.',
   },
-  liang: {
-    photo: RuqiantPortrait,
-    name: 'Ruqiang Liang, Ph.D.',
-    subheading: 'Chief Technology Officer',
-    bio: `24 years experience in computational biology, software engineering, molecular biology, assay development and sensor design (UC Davis, Washington University, University of Louisville, University of Kentucky, Shanghai Institutes for Biological Sciences, University of Chinese Academy of Sciences, Sichuan University)
-      Chinese Academy of Sciences first rank scholarship, Sichuan University scholarship
-      Expert in computational (in silico) guided design and modeling (Rosetta, Chimera)`,
-  },
+  // liang: {
+  //   photo: RuqiantPortrait,
+  //   name: 'Ruqiang Liang, Ph.D.',
+  //   subheading: 'Chief Technology Officer',
+  //   bio: `24 years experience in computational biology, software engineering, molecular biology, assay development and sensor design (UC Davis, Washington University, University of Louisville, University of Kentucky, Shanghai Institutes for Biological Sciences, University of Chinese Academy of Sciences, Sichuan University)
+  //     Chinese Academy of Sciences first rank scholarship, Sichuan University scholarship
+  //     Expert in computational (in silico) guided design and modeling (Rosetta, Chimera)`,
+  // },
 };
 
 export default () => (

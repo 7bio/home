@@ -1,16 +1,26 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import './styles.css';
-import '../styles/global.css';
+import './layout.css';
+import 'typeface-lato';
 import PropTypes from 'prop-types';
 
-import PrimaryLogo from '../images/logo_no_background.png';
-import NavBar from './NavBar';
-import favicon from '../images/gpcr_favicon.png';
+import PrimaryLogo from '../../static/images/top_left_logo.png';
+import NavigationBar from './navigation/NavigationBar';
+import favicon from '../../static/images/favicon.png';
+
+// prevent animations while user resizes screen
+let resizeTimer;
+window.addEventListener('resize', () => {
+  document.body.classList.add('resize-animation-stopper');
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove('resize-animation-stopper');
+  }, 400);
+});
 
 export default Object.assign(
   ({ children }) => (
-    <div>
+    <div style={{ height: '100%' }}>
       <Helmet
         defer={false}
         title="Seven Biosciences"
@@ -20,14 +30,14 @@ export default Object.assign(
       />
       <div className="main">
         <div className="main__header">
-          <div className="header__logo__container">
+          <div className="main__header__logo__container">
             <img
               src={PrimaryLogo}
-              className="header__img"
+              className="myLogo"
               alt="logo for Seven Biosciences"
             />
           </div>
-          <NavBar />
+          <NavigationBar />
         </div>
         <div className="main__body">{children}</div>
         <div className="main__footer">
@@ -40,5 +50,3 @@ export default Object.assign(
   ),
   { propTypes: { children: PropTypes.string.isRequired } }
 );
-
-// https://stackoverflow.com/questions/51271992/adding-proptypes-to-unnamed-anonymous-default-exported-functions-e-i-export-d

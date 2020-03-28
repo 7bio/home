@@ -1,0 +1,28 @@
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.iframe-style {
+  width: 640px;
+  height: 360px;
+}
+
+
+@media screen and (max-width: 730px) {
+  .video-wrapper {  
+  }
+  .iframe-style {
+  }
+}
+
+@media screen and (max-height: 500px)  {
+  .video-wrapper {  
+    height: 75%;
+  }
+
+  .iframe-style {
+    height: 100%;
+  }
+}

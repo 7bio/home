@@ -1,28 +1,28 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import './navigationLink.css';
 
-class NavLink extends React.PureComponent {
+class NavigationLink extends React.PureComponent {
   render() {
     const { destination, text } = this.props;
     return (
-      <div className="header__links__single">
+      <li>
         <Link
           to={destination}
-          className="header__links__text"
-          activeClassName="header__links__text--active"
+          className="header__link__a"
+          activeClassName="header__link__a--active"
         >
           {text}
         </Link>
-        <div id="circle" />
-      </div>
+      </li>
     );
   }
 }
 
-export default NavLink;
+export default NavigationLink;
 
-NavLink.propTypes = {
+NavigationLink.propTypes = {
   destination: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
