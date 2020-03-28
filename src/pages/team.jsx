@@ -1,7 +1,7 @@
 import React from 'react';
 import './team.css';
 
-import Layout from '../components/Layout';
+import Layout from '../components/layout';
 import OnePersonLeadership from '../components/team/OnePersonLeadership';
 import LinPortrait2 from '../../static/images/team_members/lin_600x750.jpg';
 import GracePortrait2 from '../../static/images/team_members/grace_600x750.jpg';

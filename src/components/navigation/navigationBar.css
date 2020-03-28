@@ -35,6 +35,11 @@
   cursor: pointer;
 }
 
+.burger:focus {
+  outline: 1px ridge var(--secondary-green) 
+}
+
+
 .burger > div {
   width: 25px;
   height: 3px;

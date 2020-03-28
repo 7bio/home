@@ -31,11 +31,13 @@ export default Object.assign(
       <div className="main">
         <div className="main__header">
           <div className="main__header__logo__container">
-            <img
-              src={PrimaryLogo}
-              className="myLogo"
-              alt="logo for Seven Biosciences"
-            />
+            <a href="/">
+              <img
+                src={PrimaryLogo}
+                className="myLogo"
+                alt="Seven Biosciences"
+              />
+            </a>
           </div>
           <NavigationBar />
         </div>

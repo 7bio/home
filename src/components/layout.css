@@ -15,9 +15,10 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: white;
+  background-color: #e6e6e6;  
   font-family: 'lato', 'Times New Roman', Times;
   color: var(--secondary-grey);
+  position: relative;
 }
 
 body {
@@ -47,7 +48,6 @@ img {
   max-height: 11%;
 }
 
-
 .main__header__logo__container {
   flex: 1 1 35%;  /*grow | shrink | basis */
   line-height: 0;
@@ -70,11 +70,9 @@ img {
 
 .main__body {
   display: flex;
-  background-color: white;
   width: 100%;
   flex: 1 0 auto;
   flex-direction: column;
-
 }
 
 .page-layout {
@@ -82,6 +80,14 @@ img {
   height: 100%;
   padding: 20px 45px;
   background-color: #e6e6e6;
+}
+
+@media screen and (max-width: 375px) {
+  .page-layout {
+
+    padding: 45px;
+    /* background-color: #e6e6e6; */
+  }
 }
 
 .main__footer {
@@ -96,12 +102,4 @@ img {
 .main__footer__content {
   color: var(--primary-green);
   font-size: 0.875rem;
-}
-
-
-@media screen and (max-width: 850px) {
-  .page-layout {
-    width: 100%;
-    padding: 20px 45px;
-  }
 }
