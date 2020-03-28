@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import Video from '../components/Video';
+import Layout from '../components/layout';
+import Video from '../components/video';
 
 export default () => (
   <Layout style={{ color: `teal` }}>

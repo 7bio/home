@@ -15,9 +15,10 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: white;
+  background-color: #e6e6e6;  
   font-family: 'lato', 'Times New Roman', Times;
   color: var(--secondary-grey);
+  position: relative;
 }
 
 body {
@@ -70,11 +71,9 @@ img {
 
 .main__body {
   display: flex;
-  background-color: white;
   width: 100%;
   flex: 1 0 auto;
   flex-direction: column;
-
 }
 
 .page-layout {
@@ -83,6 +82,15 @@ img {
   padding: 20px 45px;
   background-color: #e6e6e6;
 }
+
+@media screen and (max-width: 375px) {
+  .page-layout {
+
+    padding: 45px;
+    /* background-color: #e6e6e6; */
+  }
+}
+
 
 .main__footer {
   display: flex;
@@ -99,9 +107,9 @@ img {
 }
 
 
-@media screen and (max-width: 850px) {
+/* @media screen and (max-width: 850px) {
   .page-layout {
     width: 100%;
     padding: 20px 45px;
   }
-}
+} */

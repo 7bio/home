@@ -21,7 +21,24 @@
   text-shadow: 0 1px 0 black;
 }
 
-@media screen and (max-width: 768px) {
+/* bigger than mobile widths */
+@media screen and (min-width: 376px) {
+  .background__image {
+    display: flex;
+    position: absolute;
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), 
+    url("../../static/images/home-background-image-1024x606.jpg");
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* between mobile width and smaller laptop size */
+@media (min-width: 376px) and (max-width: 768px){
   .homepage__text p{
     font-size: 1.1em;
     color: white;
@@ -35,18 +52,33 @@
   }
 }
 
-.background__image {
-  display: flex;
-  position: absolute;
-  background-image: 
-  linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), 
-  url("../../static/images/home-background-image-1024x606.jpg");
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* mobile width */
+@media screen and (max-width: 375px) {
+  .homepage__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .background__image {
+    display: flex;
+    flex: 1;
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), 
+    url("../../static/images/home-background-image-1024x606.jpg");
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .homepage__text p{
+    font-size: 1.2em;
+    width: 80%;
+  }
 }
-
-
-
