@@ -52,7 +52,7 @@
   }
 }
 
-/* mobile width */
+/* mobile width 375px*/
 @media screen and (max-width: 375px) {
   .homepage__container {
     height: 100%;
@@ -79,6 +79,42 @@
   }
   .homepage__text p{
     font-size: 1.2em;
+    width: 80%;
+  }
+}
+
+/* sideways mobile width 896 length 414 */
+@media only screen 
+  and (max-height: 414px) 
+  and (max-width: 896px) 
+  {
+  .homepage__container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .background__image {
+    display: flex;
+    background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), 
+    url("../../static/images/home-background-image-1024x606.jpg");
+    background-position: center;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: initial;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .homepage__text p{
+    font-size: 1.1em;
     width: 80%;
   }
 }
